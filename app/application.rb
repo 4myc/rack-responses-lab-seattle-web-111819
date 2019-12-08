@@ -3,8 +3,6 @@
 class Application
     def call(env)
         resp = Rack::Response.new
-
-        # time = Time.now.strftime("%I:%M%p") #=> "08:37AM"
         time = Time.now
 
         if time.hour < 12
